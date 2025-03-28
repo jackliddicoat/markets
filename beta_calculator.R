@@ -17,4 +17,4 @@ beta_calculator <- function(symbol, days, plot = F) {
     return(beta)
   }
 }
-beta_calculator("ARES", 120, plot = F)
+beta_calculator("NVDA", 180, plot = T)
