@@ -1,3 +1,4 @@
+library(quantmod)
 beta_calculator <- function(symbol, days, plot = F) {
   stock <- getSymbols(symbol, from = Sys.Date() - days, auto.assign = F)
   getSymbols("SPY", from = Sys.Date() - days)
@@ -16,4 +17,4 @@ beta_calculator <- function(symbol, days, plot = F) {
     return(beta)
   }
 }
-beta_calculator("ARES", 120, plot = T)
+beta_calculator("ARES", 120, plot = F)
