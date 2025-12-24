@@ -56,13 +56,3 @@ portfolio_statistics <- function(tickers, shares, ndays = 365, year = 2025) {
   return(list("exp_return" = return_portfolio, "sd" = sd_portfolio, "beta" = weighted_beta,
               "sharpe" = sharpe_ratio))
 }
-
-tickers <- c("T", "RYCEY", "FTEC", "QQQ", "SPY", "GOLY", "VTI")
-shares <- c(3.034, 90, 1.001, 1.0011, 6.0216, 18.327, 3.0143)
-portfolio_statistics(tickers, shares)
-
-
-
-
-
-
